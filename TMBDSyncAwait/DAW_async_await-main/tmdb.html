@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0b89e6fc36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logoH.svg" width="200px"/>
+        <div class="searchBar"><input type="text" id="search" placeholder="Search movie"/><i class="fa-solid fa-magnifying-glass"></i></div>
+    </header>
+    <main>
+        <nav class="menu">
+            <ul>
+                <li><a id="showFavs" class="active">Favorites</a></li>
+                <li><a id="showWatch">Watchlist</a></li>
+            </ul>
+        </nav>
+        <div id="moviesResult"></div>
+        <div id="loadingIndicator" style="display: none;">
+            <img src="img/loading.gif" alt="Loading..." />
+        </div>
+    </main>
+    <footer>
+        <img src="img/logoF.svg" width="100px" />   
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root{
+    --verd:#8fcea1;
+    --blau: #04b4e3;
+    --gray: #03223d;
+}
+
+body{
+    margin:0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+header, footer{
+    background-color: var(--gray);
+    padding: 15px 50px;
+}
+
+.searchBar{
+    position: relative;
+}
+
+.searchBar input{
+    width: 400px;
+    border: 0px;
+    padding: 9px 20px;
+    border-radius: 15px;
+}
+
+.searchBar i{
+    position: absolute;
+    right: 13px;
+    font-size: 22px;
+    top: 5px;
+    cursor: pointer;
+}
+
+main{
+    min-height: calc(100vh - 100px);
+}
+
+.menu ul {
+    margin: 40px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 25px;
+}
+
+.menu ul li a{
+    cursor: pointer;
+    display: block;
+    padding-bottom: 9px;
+}
+
+.menu ul li .active, .menu ul li a:hover{
+    border-bottom: 4px solid var(--verd);
+    padding-bottom: 5px;
+}
+
+#moviesResult{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;;
+}
+
+.movie{
+    width: 200px;
+    margin: 0px 10px 50px 10px;
+    position: relative;
+}
+
+.movie img{
+    width: 200px;
+    height: auto;
+}
+
+.movie .buttons{
+    position: absolute;
+    bottom: 0px;
+}
+
+.buttons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.movie h3 {
+    font-size: 20px;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+.iconActive,
+.iconNoActive:hover{
+    color: var(--verd);
+}
+
+.iconNoActive,
+.iconActive:hover{
+    color: var(--gray);
+}
+
